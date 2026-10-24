@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Domingo Cañete</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <!-- Logo goes back to Home -->
+      <a href="index.html" class="logo">Domingo<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <!-- These scroll to sections on this main page -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#quizzes">Quizzes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section" style="padding-top: 120px;">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <h3 class="mini-title">Where I started</h3>
+            <p>
+              I'm a Bachelor of Science in Information Technology student at Cebu Eastern College in Cebu City.
+              I began with basic HTML pages, then moved into JavaScript by making things I would
+              actually use, while my capstone team and I work on AIDA, a drowning-risk detection system.
+            </p>
+            <p>
+              Most of my coding happens on my phone in the Spck Editor, with a laptop as backup.
+              That setup taught me to keep my code lightweight and my layouts friendly to small screens.
+            </p>
+
+            <h3 class="mini-title">What I enjoy</h3>
+            <p>
+              I like software that helps with something real, like tracking money and savings, or helping
+              keep swimmers safe. I also enjoy game development, because it means working with a team to build
+              something people can play.
+            </p>
+
+            <h3 class="mini-title">Where I'm going</h3>
+            <p>
+              My goals are to write cleaner, better-organized code, get comfortable with Git and
+              deployment, and finish my capstone. I use AI tools to learn faster, and I always read,
+              test, and understand what they give me before I use it.
+            </p>
+          </div>
+          <ul class="facts reveal">
+            <li><strong>Studying</strong><span>BS Information Technology, Cebu Eastern College</span></li>
+            <li><strong>Interested in</strong><span>Web apps, AI + IoT, game dev</span></li>
+            <li><strong>Based in</strong><span>Cebu City, Philippines</span></li>
+            <li><strong>Right now</strong><span>Capstone: AIDA drowning-risk system</span></li>
+            <li><strong>Codes on</strong><span>Phone (Spck Editor) and laptop</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">No inflated percentage bars. Just what I can do today and what I'm still working on.</p>
+        <div class="skill-cols">
+          <div class="skill-card reveal">
+            <h3>Comfortable with</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript (vanilla)</li>
+              <li>Tailwind CSS</li><li>Responsive layouts</li><li>localStorage</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Still learning</h3>
+            <ul class="chips">
+              <li>Chart.js</li><li>Git &amp; GitHub</li><li>GitHub Pages deployment</li>
+              <li>Python &amp; Flask</li><li>YOLO &amp; OpenCV</li><li>ESP32 (Arduino)</li>
+              <li>Debugging larger codebases</li><li>Roblox Studio (Lua)</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>How I work</h3>
+            <ul class="chips">
+              <li>AI-assisted coding</li><li>Mobile-first development</li>
+              <li>Small, step-by-step changes</li><li>Team projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Things I've built, what I did on each, and what they taught me.</p>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="shot shot-logo"><img src="images/aida-logo.png" alt="AIDA logo: a blue dolphin leaping over waves" /></div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3>AIDA: AI Drowning Assistance</h3>
+                <span class="status wip">Capstone</span>
+              </div>
+              <p class="tags">Python · Flask · YOLO · OpenCV · ESP32 · HTML/CSS/JS · Research team of 5</p>
+              <p>An AI and IoT drowning-risk detection assistant for the swimming pool of the Cebu City Sports Center.
+                 A camera watches a defined pool area and pose estimation checks swimmer posture. When a possible risk
+                 is detected, AIDA triggers a sound alert and a handheld alert unit with vibration and light, sent over
+                 a local wireless network so it doesn't depend on the cloud.</p>
+              <p>Lifeguards stay in control: AIDA supports human monitoring and does not replace it. Our research first
+                 studies the pool's actual safety conditions and the needs of pool personnel and adult swimmers, then
+                 builds and tests a prototype around those requirements. It connects to UN Sustainable Development Goal 9.</p>
+              <p><strong>My contribution:</strong> I serve as the system administrator for the team. I set up and maintain the system environment the prototype runs on, manage user accounts and access on the web dashboard, and keep the device, network, and software settings consistent between testing and demo runs. I also help document the setup so the rest of the team can test without breaking the environment.</p>
+              <div class="learned">
+                <h4>What it covers</h4>
+                <ul>
+                  <li>Research first: Chapters 1 to 3 cover the problem, related studies, and the methodology, built around the safety needs of a real pool.</li>
+                  <li>Planned with Agile sprints: planning, design, development, testing, and review for each component.</li>
+                  <li>Planned stack: a Python and Flask backend with SQLite, a web dashboard, YOLO and OpenCV for detection, and ESP32 boards for the alert units.</li>
+                  <li>Honest limits: it is a prototype, and the study does not claim guaranteed detection or proven accuracy.</li>
+                </ul>
+              </div>
+              <span class="link muted">Research paper: Chapters 1 to 3 complete</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="shot shot-logo shot-logo-wide"><img src="images/fintrack-logo.png" alt="Financial Tracker Pro logo" /></div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3>FinTrack Pro</h3>
+                <span class="status live">Live</span>
+              </div>
+              <p class="tags">HTML · Tailwind CSS · Chart.js · Lucide icons · JavaScript</p>
+              <p>A personal finance and inventory app. Create an account, track your spending and savings,
+                 and see where your money goes in charts, including a donut chart for expenses. It also has
+                 savings categories, spending and investment tabs, a protection tab, and a blue or pink theme switcher.</p>
+              <p><strong>My contribution:</strong> I built the whole app and kept improving it: the glass-style layout,
+                 login and registration with localStorage, the charts, and publishing it on GitHub Pages.
+                 AI helped with code, and I tested every change myself.</p>
+              <div class="learned">
+                <h4>Challenges and what I learned</h4>
+                <ul>
+                  <li>My first deployment failed silently because of mismatched filenames and the wrong folder structure. Now I always double-check paths and letter case.</li>
+                  <li>Fixing the background gradient showed me how Tailwind can clash with my own CSS, and how <code>background-attachment: fixed</code> behaves on phones.</li>
+                  <li>My editor blocks native <code>confirm()</code> pop-ups, so I built custom modals for registration and confirmations.</li>
+                </ul>
+              </div>
+              <a class="link" href="https://hatred258.github.io/deploy/">View live site &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="shot shot-poster"><img src="images/black-signal-poster.jpg" alt="Operation: Black Signal poster: a hooded figure with glowing green eyes, Task Force versus Syndicate" /></div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3>Operation: Black Signal</h3>
+                <span class="status wip">In progress</span>
+              </div>
+              <p class="tags">Roblox Studio · Team project · 5 members</p>
+              <p>A team-built tactical shooter in Roblox Studio, where Task Force goes up against the Syndicate.
+                 We shared our progress in a video presentation.</p>
+              <p><strong>My contribution:</strong> I was the project manager for our five-person team. I broke the game into tasks, assigned work based on each member's strengths, and set short deadlines so we always had something to show. I ran our check-ins, kept track of what was done and what was blocking people, and made sure the different parts (map, scripting, UI, weapons) fit together before our video presentation.</p>
+              <div class="learned">
+                <h4>Challenges and what I learned</h4>
+                <ul>
+                  <li>With five people on one game, we had to split the work clearly and keep everyone's parts compatible.</li>
+                  <li>Managing the team taught me that most delays come from unclear tasks, not lazy members — writing a clear task with a clear deadline fixed most of our slowdowns.</li>
+                  <li>I learned to keep a simple task board so everyone could see the status of the game at a glance.</li>
+                </ul>
+              </div>
+              <span class="link muted">Progress shared via video presentation</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="shot shot-2" role="img" aria-label="Screenshot placeholder for this portfolio"><span>This Portfolio</span></div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3>This Portfolio Website</h3>
+                <span class="status live">Live</span>
+              </div>
+              <p class="tags">HTML · CSS · JavaScript · GitHub Pages</p>
+              <p>A responsive one-page site with a mobile menu, a navigation that highlights the section you're
+                 reading, and a light and dark theme. It covers who I am, what I can do, and what I've built.</p>
+              <p><strong>My contribution:</strong> I wrote the content, chose which projects to feature, tested the
+                 layout on my phone, and published it on GitHub Pages. AI helped generate and refine the starting code.</p>
+              <div class="learned">
+                <h4>Challenges and what I learned</h4>
+                <ul>
+                  <li>Designing for a narrow phone screen first, then scaling up.</li>
+                  <li>Linking sections with <code>href="#projects"</code> and keeping file paths correct for hosting.</li>
+                </ul>
+              </div>
+              <a class="link" href="https://hatred258.github.io/portfolio/">View this site &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quizzes" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Quizzes</h2>
+        <p class="section-sub">My quiz results and what each one taught me.</p>
+        <div class="quiz-grid">
+          <article class="quiz-card reveal">
+            <div class="quiz-top">
+              <span class="quiz-label">Quiz 01</span>
+              <span class="status live">Done</span>
+            </div>
+            <div class="quiz-score" aria-label="Quiz 1 score: 20 out of 20">
+              <strong>20 / 20</strong><span>perfect score</span>
+            </div>
+            <h3>FE - Semifinal Quiz 1</h3>
+            <ul class="quiz-meta">
+              <li><span>Date</span>September 23</li>
+              <li><span>Subject</span>Free Elective 3: IT Project Management</li>
+              <li><span>Format</span>Online exam portal</li>
+            </ul>
+            <p>The first semifinal quiz for IT Project Management, covering Week 9: Agile Project Execution. It tested the Agile Manifesto values, the three Scrum roles and their responsibilities, sprint planning, and the difference between the Product Backlog and Sprint Backlog.</p>
+            <div class="learned">
+              <h4>What I learned</h4>
+              <ul>
+                <li>The three Scrum roles each have a distinct job: the Product Owner prioritizes the backlog, the Scrum Master removes blockers and coaches the team, and the Development Team builds the working increment each sprint.</li>
+                <li>Agile execution runs in short, repeatable sprints that produce a usable piece of the product for feedback, instead of one long unbroken line from start to finish.</li>
+              </ul>
+            </div>
+            <span class="link muted">Source: school exam portal (cec-exam.web.app)</span>
+          </article>
+
+          <article class="quiz-card reveal">
+            <div class="quiz-top">
+              <span class="quiz-label">Quiz 02</span>
+              <span class="status live">Done</span>
+            </div>
+            <div class="quiz-score" aria-label="Quiz 2 score: 30 out of 30">
+              <strong>30 / 30</strong><span>perfect score</span>
+            </div>
+            <h3>FE - Semifinal Quiz 2</h3>
+            <ul class="quiz-meta">
+              <li><span>Date</span>September 23</li>
+              <li><span>Subject</span>Free Elective 3: IT Project Management</li>
+              <li><span>Format</span>Online exam portal</li>
+            </ul>
+            <p>The second semifinal quiz, covering Week 10: Project Tracking Tools. It focused on the Kanban board concept, comparing Jira, Trello, and ClickUp by best use case, learning curve, native Agile support, and free tier.</p>
+            <div class="learned">
+              <h4>What I learned</h4>
+              <ul>
+                <li>There is no single "best" tracking tool — only the best fit for a team's size, workflow complexity, and how closely it follows formal Scrum ceremonies. A small capstone team may only need Trello, while a large enterprise project gets more value from Jira.</li>
+                <li>Digital tracking tools beat paper because they update in real time, are visible to the whole team at once, and keep a history of what changed and when.</li>
+              </ul>
+            </div>
+            <span class="link muted">Source: school exam portal (cec-exam.web.app)</span>
+          </article>
+
+          <article class="quiz-card reveal">
+            <div class="quiz-top">
+              <span class="quiz-label">Semifinal Exam</span>
+              <span class="status live">Done</span>
+            </div>
+            <div class="quiz-score" aria-label="Semifinal exam score: 49 out of 50">
+              <strong>49 / 50</strong><span>98 percent</span>
+            </div>
+            <h3>Semifinal Exam FE 3</h3>
+            <ul class="quiz-meta">
+              <li><span>Date</span>September 25</li>
+              <li><span>Subject</span>Free Elective 3: IT Project Management</li>
+              <li><span>Format</span>Online exam portal</li>
+            </ul>
+            <p>The semifinal exam for IT Project Management, covering Weeks 9 to 12: Agile execution, project tracking tools, monitoring and control, and quality assurance with change management.</p>
+            <div class="learned">
+              <h4>What I learned</h4>
+              <ul>
+                <li>How Scrum roles, sprint planning, and the product and sprint backlogs turn a plan into weekly work.</li>
+                <li>How to track progress with project tools, then monitor, control, and handle change requests in a project.</li>
+              </ul>
+            </div>
+            <span class="link muted">Source: school exam portal (cec-exam.web.app)</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-sub">Have a project, a question, or an opportunity? My inbox is open.</p>
+        <a class="btn btn-primary" href="mailto:cjr3423@gmail.com?subject=Hello%20from%20your%20portfolio">cjr3423@gmail.com</a>
+        <div class="mail-actions">
+          <a class="btn btn-ghost btn-sm" href="https://mail.google.com/mail/?view=cm&fs=1&to=cjr3423@gmail.com&su=Hello%20from%20your%20portfolio" target="_blank" rel="noopener">Open in Gmail</a>
+          <button class="btn btn-ghost btn-sm" type="button" id="copyEmail" data-email="cjr3423@gmail.com">Copy email</button>
+        </div>
+        <p class="copy-note" id="copyNote" role="status" aria-live="polite"></p>
+        <p class="social">
+          <a href="https://github.com/hatred258" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Domingo Cañete. All rights reserved.</p>
+      <p class="small">Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
